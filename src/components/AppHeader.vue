@@ -1,6 +1,8 @@
 <script>
 export default {
-
+    props: {
+        navItems: Array,
+    }
 }
 </script>
 
@@ -22,22 +24,18 @@ export default {
                 </div>
 
             </div>
-            
             <!-- /HEADER TOP -->
             <!-- HEADER BOTTOM -->
             <div class="header-bottom d-flex justify-content-between align-items-center mt-3">
                 <div class="logo">
                     <img src="../assets/image/images/classic_shop_logo2x.png" alt="">
                 </div>
-                <div class="navbar-nav d-flex flex-row align-items-baseline gap-4">
-                    <a class="nav-link active text-white" aria-current="page" href="#">Home<i class="fa-solid fa-chevron-down"></i></a>
-                    <a class="nav-link" href="#">Shop<i class="fa-solid fa-chevron-down"></i></a>
-                    <a class="nav-link" href="#">Products<i class="fa-solid fa-chevron-down"></i></a>
-                    <a class="nav-link disabled" aria-disabled="true">Categories<i class="fa-solid fa-chevron-down"></i></a>
-                    <a class="nav-link" href="#">News<i class="fa-solid fa-chevron-down"></i></a>
-                    <a class="nav-link disabled" aria-disabled="true">Elements<i class="fa-solid fa-chevron-down"></i></a>
-                    <button type="button" class="btn btn-primary">SHOP NOW!</button>
-                    <i class="fa-solid fa-magnifying-glass"></i>
+                <div class="navbar-nav">
+                    <ul class="navbar-nav d-flex flex-row align-items-baseline gap-4">
+                        <li v-for="item in navItems"><a href="">{{ item }}<i class="fa-solid fa-chevron-down"></i></a></li>
+                        <button type="button" class="btn btn-primary">SHOP NOW!</button>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </ul>
                 </div>
             </div>
             <!--/ HEADER BOTTOM -->
@@ -52,18 +50,23 @@ header {
         border-bottom: 1px solid hsl(210deg 5.43% 36.08%);
 
         span {
-            border-right: 1px solid hsl(210deg 5.43% 36.08%);
+            // border-right: 1px solid hsl(210deg 5.43% 36.08%);
             padding: 1rem;
         }
     }
 
-    color: hsl(210deg 5.43% 36.08%);
+
 
     .cart {
         color: rgb(15, 15, 15);
     }
 
     .header-bottom {
+        a {
+            text-decoration: none;
+            color: hsl(210deg 5.43% 36.08%);
+
+        }
 
         .logo {
             img {
@@ -71,4 +74,5 @@ header {
             }
         }
     }
-}</style>
+}
+</style>

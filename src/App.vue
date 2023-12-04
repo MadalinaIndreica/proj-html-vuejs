@@ -1,22 +1,30 @@
 <script>
 import AppFooter from './components/AppFooter.vue';
 import AppHeader from "./components/AppHeader.vue";
+import AppMain from "./components/AppMain.vue"
 
 export default  {
   data (){
     return {
+      headerNav: [
+        'Home',
+        'Shop',
+        'Products',
+        'Categories',
+        'News',
+        'Elements'
+      ]
 
     }
   },
-  components : { AppHeader, AppFooter }
+  components : { AppHeader, AppFooter, AppMain}
 }
 
 </script>
 
 <template>
-  <AppHeader>
-
-  </AppHeader>
+  <AppHeader :navItems="headerNav"></AppHeader>
+  <AppMain/>
   <AppFooter></AppFooter>
 
 </template>
