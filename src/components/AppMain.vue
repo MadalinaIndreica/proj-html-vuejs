@@ -111,7 +111,8 @@ export default {
                     <img src="../assets/image/images/post_img_12-200x125.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5>Lorem ipsum dolor sit, amet consectetur</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque nisi animi eum itaque deleniti ab, incidunt, nesciunt quisquam voluptates.</p>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque nisi animi eum
+                            itaque deleniti ab, incidunt, nesciunt quisquam voluptates.</p>
                     </div>
                 </div>
 
@@ -120,7 +121,8 @@ export default {
                     <img src="../assets/image/images/post_img_11-200x125.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5>Lorem ipsum dolor sit, amet consectetur</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque nisi animi eum itaque deleniti ab, incidunt, nesciunt quisquam voluptates.</p>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque nisi animi eum
+                            itaque deleniti ab, incidunt, nesciunt quisquam voluptates.</p>
                     </div>
                 </div>
 
@@ -129,18 +131,46 @@ export default {
                     <img src="../assets/image/images/post_img_10-200x125.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5>Lorem ipsum dolor sit, amet consectetur</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque nisi animi eum itaque deleniti ab, incidunt, nesciunt quisquam voluptates.</p>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque nisi animi eum
+                            itaque deleniti ab, incidunt, nesciunt quisquam voluptates.</p>
                     </div>
                 </div>
             </div>
         </div>
-        
+
     </div>
     <!-- /From our blog -->
+
     <hr>
+
     <!-- list group -->
-    <ListGroup/>
+    <ListGroup />
     <!-- /list group -->
+
+    <!-- logo section -->
+    <div class="logo-section">
+        <div class="container">
+            <h2 class="text-center">BRAND LOGOS</h2>
+            <div class="logos d-flex justify-content-between">
+                <div class="logo-image">
+                    <img src="../assets/image/images/b_logotype_1.png" alt="">
+                </div>
+                <div class="logo-image">
+                    <img src="../assets/image/images/b_logotype_2.png" alt="">
+                </div>
+                <div class="logo-image">
+                    <img src="../assets/image/images/b_logotype_3.png" alt="">
+                </div>
+                <div class="logo-image">
+                    <img src="../assets/image/images/b_logotype_4.png" alt="">
+                </div>
+                <div class="logo-image">
+                    <img src="../assets/image/images/b_logotype_5.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /logo section -->
 </template>
 
 <style lang="scss" scoped>
@@ -235,18 +265,31 @@ export default {
 }
 
 //  From our blog
-.blog-section{
-    
+.blog-section {
+
     .text-part {
-    margin-top: 100px;
-    margin-bottom: 50px;
-   
-}
-.card{
+        margin-top: 100px;
+        margin-bottom: 50px;
+
+    }
+
+    .card {
         border: none;
     }
 }
+
 hr {
     margin-top: 5rem;
+}
+// logo section
+.logo-section{
+
+    background-color:hsl(0deg 0% 96.47%);
+    height: 400px;
+    padding: 5rem;
+    h2{
+        color: hsl(0deg 0% 64.71%);
+        padding-bottom: 4rem;
+    }
 }
 </style>

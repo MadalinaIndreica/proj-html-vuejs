@@ -144,8 +144,9 @@ export default {
 .list-section {
     width: 500px;
     text-align: center;
-    margin-left: 100px;
+    margin-left: 30px;
     margin-top: 10rem;
+    margin-bottom: 5rem;
     ul{
         padding: 2rem;
     }
