@@ -1,5 +1,7 @@
 <script>
 import AppCardList from "./AppCardList.vue"
+import BestProducts from "./BestProducts.vue";
+
 export default {
     data() {
         return {
@@ -7,7 +9,7 @@ export default {
         }
 
     },
-    components: { AppCardList }
+    components: { AppCardList, BestProducts, }
 }
 
 </script>
@@ -57,7 +59,7 @@ export default {
     <!-- /Collections section -->
 
     <!-- carousel section -->
-
+    <BestProducts/>
     <!-- carousel section -->
 
 </template>
