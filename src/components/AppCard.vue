@@ -22,7 +22,7 @@ export default {
         <div class="card-body">
             <div class="card-text">
                 <h6>{{ item.title }}</h6>
-                <h7>{{ item.subtitle }}</h7>
+                <p>{{ item.subtitle }}</p>
                 <p class="price">{{ item.price }}</p>
             </div>
         </div>
