@@ -5,7 +5,7 @@ import BestProducts from "./BestProducts.vue";
 export default {
     data() {
         return {
-
+            titleTwo: "new arrivals"
         }
 
     },
@@ -77,6 +77,22 @@ export default {
         </div>
     </div>
     <!-- /discount section -->
+
+    <!-- new arrivals -->
+    <BestProducts />
+    <!-- /new arrivals-->
+
+    <!-- profile section -->
+    <div class="section  text-center">
+        <div class="container">
+        <img class="rounded-img" src="../assets/image/images/woman_testimonial.png" alt="">
+        <p class="fst-italic">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio error debitis, modi recusandae possimus vel aperiam fuga illo unde alias, quasi vero ullam aut ex omnis dolore voluptatem libero. Nemo.</p>
+        <span><strong>Darío Pineda</strong> - Theme fusion.</span>
+        </div>
+
+    </div>
+    <!-- /profile section -->
+
 </template>
 
 <style lang="scss" scoped>
@@ -148,4 +164,21 @@ export default {
         background-image: url(../assets/image/images/promo_box_2_bg.jpg);
     }
 }
+
+// profile section
+.section {
+    color: white;
+    background-image: url(../assets/image/images/testimonials_home_1_bg.jpg);
+    background-size: cover;
+    height: 400px;
+    .rounded-img{
+    margin-top: 100px;
+    margin-bottom: 15px;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+}
+
 </style>
