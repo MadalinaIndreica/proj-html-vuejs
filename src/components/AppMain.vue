@@ -1,6 +1,7 @@
 <script>
 import AppCardList from "./AppCardList.vue"
 import BestProducts from "./BestProducts.vue";
+import ListGroup from "./ListGroup.vue";
 
 export default {
     data() {
@@ -9,7 +10,7 @@ export default {
         }
 
     },
-    components: { AppCardList, BestProducts, }
+    components: { AppCardList, BestProducts, ListGroup }
 }
 
 </script>
@@ -66,13 +67,15 @@ export default {
     <div class="row discount">
         <div class="col first-col">
             <h3>70% Off</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime accusamus quia, obcaecati facere doloribus praesentium.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime accusamus quia, obcaecati facere doloribus
+                praesentium.</p>
             <button type="button" class="btn btn-outline-light">VIEW MORE</button>
 
         </div>
         <div class="col second-col">
             <h3>Free Shipping</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime accusamus quia, obcaecati facere doloribus praesentium.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime accusamus quia, obcaecati facere doloribus
+                praesentium.</p>
             <button type="button" class="btn btn-outline-light">VIEW MORE</button>
         </div>
     </div>
@@ -85,14 +88,59 @@ export default {
     <!-- profile section -->
     <div class="section  text-center">
         <div class="container">
-        <img class="rounded-img" src="../assets/image/images/woman_testimonial.png" alt="">
-        <p class="fst-italic">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio error debitis, modi recusandae possimus vel aperiam fuga illo unde alias, quasi vero ullam aut ex omnis dolore voluptatem libero. Nemo.</p>
-        <span><strong>Darío Pineda</strong> - Theme fusion.</span>
+            <img class="rounded-img" src="../assets/image/images/woman_testimonial.png" alt="">
+            <p class="fst-italic">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio error debitis, modi
+                recusandae possimus vel aperiam fuga illo unde alias, quasi vero ullam aut ex omnis dolore voluptatem
+                libero. Nemo.</p>
+            <span><strong>Darío Pineda</strong> - Theme fusion.</span>
         </div>
 
     </div>
     <!-- /profile section -->
 
+    <!-- From our blog -->
+    <div class="container">
+        <div class="blog-section">
+            <div class="text-part">
+                <h2 class="text-center">From Our Blog</h2>
+                <p class="text-center">The latest Classic Shop news</p>
+            </div>
+            <!-- first card -->
+            <div class="row d-flex gap-5 justify-content-center">
+                <div class="card" style="width: 25rem;">
+                    <img src="../assets/image/images/post_img_12-200x125.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5>Lorem ipsum dolor sit, amet consectetur</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque nisi animi eum itaque deleniti ab, incidunt, nesciunt quisquam voluptates.</p>
+                    </div>
+                </div>
+
+                <!-- second card -->
+                <div class="card" style="width: 25rem;">
+                    <img src="../assets/image/images/post_img_11-200x125.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5>Lorem ipsum dolor sit, amet consectetur</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque nisi animi eum itaque deleniti ab, incidunt, nesciunt quisquam voluptates.</p>
+                    </div>
+                </div>
+
+                <!-- third card -->
+                <div class="card" style="width: 25rem;">
+                    <img src="../assets/image/images/post_img_10-200x125.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5>Lorem ipsum dolor sit, amet consectetur</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque nisi animi eum itaque deleniti ab, incidunt, nesciunt quisquam voluptates.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <!-- /From our blog -->
+    <hr>
+    <!-- list group -->
+    <ListGroup/>
+    <!-- /list group -->
 </template>
 
 <style lang="scss" scoped>
@@ -149,17 +197,21 @@ export default {
     height: 500px;
     padding: 4rem;
     gap: 2rem;
-    .col{
+
+    .col {
         text-align: center;
         background-size: cover;
         height: 350px;
-        h3{
+
+        h3 {
             margin-top: 100px;
         }
     }
-    .first-col{
-        background-image:url(../assets/image/images/promo_box_1_bg.jpg) ;
+
+    .first-col {
+        background-image: url(../assets/image/images/promo_box_1_bg.jpg);
     }
+
     .second-col {
         background-image: url(../assets/image/images/promo_box_2_bg.jpg);
     }
@@ -171,14 +223,30 @@ export default {
     background-image: url(../assets/image/images/testimonials_home_1_bg.jpg);
     background-size: cover;
     height: 400px;
-    .rounded-img{
-    margin-top: 100px;
-    margin-bottom: 15px;
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 50%;
-}
+
+    .rounded-img {
+        margin-top: 100px;
+        margin-bottom: 15px;
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
 }
 
+//  From our blog
+.blog-section{
+    
+    .text-part {
+    margin-top: 100px;
+    margin-bottom: 50px;
+   
+}
+.card{
+        border: none;
+    }
+}
+hr {
+    margin-top: 5rem;
+}
 </style>
