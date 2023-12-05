@@ -32,7 +32,7 @@ export default {
 
     <!-- Collections section -->
     <div class="text-center">
-        <div class="row">
+        <div class="row my-5">
             <div class="col winter-col">
                 <div class="text">
                     <h4>Winter Collection</h4>
@@ -58,10 +58,25 @@ export default {
     </div>
     <!-- /Collections section -->
 
-    <!-- carousel section -->
-    <BestProducts/>
-    <!-- carousel section -->
+    <!-- best products section -->
+    <BestProducts />
+    <!-- best products section -->
 
+    <!-- discount section -->
+    <div class="row discount">
+        <div class="col first-col">
+            <h3>70% Off</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime accusamus quia, obcaecati facere doloribus praesentium.</p>
+            <button type="button" class="btn btn-outline-light">VIEW MORE</button>
+
+        </div>
+        <div class="col second-col">
+            <h3>Free Shipping</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime accusamus quia, obcaecati facere doloribus praesentium.</p>
+            <button type="button" class="btn btn-outline-light">VIEW MORE</button>
+        </div>
+    </div>
+    <!-- /discount section -->
 </template>
 
 <style lang="scss" scoped>
@@ -71,9 +86,11 @@ export default {
     background-image: url(../assets/image/images/home1_slide_three_bg_2.jpg);
     background-size: cover;
     height: 400px;
-    .hero-text{
+
+    .hero-text {
         padding-top: 100px;
     }
+
     .btn {
         border-radius: 20px;
         margin-right: 20px;
@@ -107,5 +124,28 @@ export default {
         padding-top: 150px;
     }
 
+}
+
+// discount section
+.discount {
+    background-image: url(../assets/image/images/bkgd_confetti-compressor.jpg);
+    background-size: cover;
+    height: 500px;
+    padding: 4rem;
+    gap: 2rem;
+    .col{
+        text-align: center;
+        background-size: cover;
+        height: 350px;
+        h3{
+            margin-top: 100px;
+        }
+    }
+    .first-col{
+        background-image:url(../assets/image/images/promo_box_1_bg.jpg) ;
+    }
+    .second-col {
+        background-image: url(../assets/image/images/promo_box_2_bg.jpg);
+    }
 }
 </style>

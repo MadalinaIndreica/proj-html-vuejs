@@ -50,7 +50,7 @@ export default {
 
 <template>
     <div class="container">
-        <h2 class="text-center mt-5">Best seller</h2>
+        <h2 class="text-center pt-5 mt-5">Best seller</h2>
         <p class="text-center mb-5">Must have products from our top sellers</p>
         <div class="wrapper d-flex  overflow-auto justify-content-between">
             <div class="card h-100"  v-for="card in cards" :key="card.id">
