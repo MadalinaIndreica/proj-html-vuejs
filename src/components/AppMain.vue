@@ -171,6 +171,23 @@ export default {
         </div>
     </div>
     <!-- /logo section -->
+
+    <!-- input section -->
+    <div class="input-section">
+        <div class="container d-flex  justify-content-evenly">
+            <div class="subscribe d-flex justify-content-evenly">
+                <i class="fa-regular fa-envelope "></i>
+                <h2>Subscribe now and get special offers</h2>
+            </div>
+            <div class="input-part d-flex justify-content-between">
+                <label for="exampleFormControlInput1" class="form-label"></label>
+                <input type="email" class="form-control form-control-lg" id="exampleFormControlInput1" placeholder="insert your email">
+                <button type="submit" class="btn btn-primary mb-3">SEND</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- /input section -->
 </template>
 
 <style lang="scss" scoped>
@@ -188,6 +205,7 @@ export default {
     .btn {
         border-radius: 20px;
         margin-right: 20px;
+        background-color: hsl(214.83deg 60.85% 53.92%);
     }
 }
 
@@ -281,15 +299,42 @@ export default {
 hr {
     margin-top: 5rem;
 }
-// logo section
-.logo-section{
 
-    background-color:hsl(0deg 0% 96.47%);
+// logo section
+.logo-section {
+
+    background-color: hsl(0deg 0% 96.47%);
     height: 400px;
     padding: 5rem;
-    h2{
+
+    h2 {
         color: hsl(0deg 0% 64.71%);
         padding-bottom: 4rem;
+    }
+}
+
+// input section
+.input-section {
+    background-color: hsl(214.29deg 6.8% 20.2%);
+    color: white;
+    height: 300px;
+   vertical-align: middle;
+   padding-top: 7rem;
+    .fa-envelope {
+        width: 50px;
+        height: 50px;
+        background-color:hsl(214.29deg 7.53% 18.24%);;
+        border-radius: 50%;
+        text-align: center;
+        padding-top: 15px;
+    }
+    .form-control-lg {
+        border-radius: 35px;
+    }
+    .btn {
+        background-color: hsl(214.83deg 60.85% 53.92%);
+        border-radius: 20px;
+        margin-top: 1rem;
     }
 }
 </style>
