@@ -60,6 +60,8 @@ export default {
     <!-- /Collections section -->
 
     <!-- best products section -->
+    <h2 class="text-center pt-5 mt-5">Best seller</h2>
+    <p class="text-center mb-5">Must have products from our top sellers</p>
     <BestProducts />
     <!-- best products section -->
 
@@ -82,6 +84,8 @@ export default {
     <!-- /discount section -->
 
     <!-- new arrivals -->
+    <h2 class="text-center pt-5 mt-5">New Arrivals</h2>
+    <p class="text-center mb-5">Brand new products from top designers</p>
     <BestProducts />
     <!-- /new arrivals-->
 
