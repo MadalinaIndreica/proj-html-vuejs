@@ -38,22 +38,22 @@ export default {
             ],
             posts: [
                 {
-                    text: "Lorem ipsum dolor sit amet consectetur adipisicing",
+                    text: "Lorem ipsum dolor sit amet consectetur",
                 },
                 {
-                    text: "Lorem ipsum dolor sit amet consectetur adipisicing",
+                    text: "Lorem ipsum dolor sit amet consectetur",
                 },
                 {
-                    text: "Lorem ipsum dolor sit amet consectetur adipisicing",
+                    text: "Lorem ipsum dolor sit amet consectetur",
                 },
                 {
-                    text: "Lorem ipsum dolor sit amet consectetur adipisicing",
+                    text: "Lorem ipsum dolor sit amet consectetur",
                 },
                 {
-                    text: "Lorem ipsum dolor sit amet consectetur adipisicing",
+                    text: "Lorem ipsum dolor sit amet consectetur",
                 },
                 {
-                    text: "Lorem ipsum dolor sit amet consectetur adipisicing",
+                    text: "Lorem ipsum dolor sit amet consectetur",
                 }
             ],
             tags: ["black", "boots", "brown", "casual", "D&G", "fabric", "Flowers", "Grey", "hat", "Hipster", "lines", "multi-porpouse", "New York", "Outdoors", "red", "responsive", "summer", "sweater", "Travel", "Warm", "White", "winter",]
@@ -127,7 +127,18 @@ export default {
         </div>
 
         <div class="footer-bottom">
-
+            <div class="container">
+                <ul d-flex flex-column justify-content-center>
+                    <li>© Copyright 2012 - 2020</li>
+                    <li>|</li>
+                    <li>Avada Theme by Theme fusion</li>
+                    <li>|</li>
+                    <li>All Rights Reserved</li>
+                    <li>|</li>
+                    <li>Powered by WordPress </li>
+                </ul>
+                <img src="../assets/image/images/payment_cards_footer.png" alt="">
+            </div>
 
 
         </div>
@@ -214,4 +225,24 @@ export default {
         }
 
     }
-}</style>
+}
+.footer-bottom{
+    background-color: hsl(216deg 7.94% 12.35%);
+    height: 200px;
+    padding-top: 65px;
+    text-align: center;
+    ul{
+        display: flex;
+        justify-content:space-around;
+        
+        li{
+            list-style-type: none;
+            color: white;
+          
+        }
+    }
+    
+}
+
+
+</style>
