@@ -180,6 +180,9 @@ export default {
             padding: 1rem;
             list-style-type: none;
             color: white;
+            &:hover {
+                background-color: hsl(0, 0%, 21%);
+            }
 
             img {
                 width: 80px;
@@ -220,6 +223,9 @@ export default {
             border: .3px solid hsl(0deg 0% 64.71%);
             padding: .5rem;
             align-items: stretch;
+            &:hover{
+                background-color:hsl(0deg 0% 64.71%) ;
+            }
 
 
         }

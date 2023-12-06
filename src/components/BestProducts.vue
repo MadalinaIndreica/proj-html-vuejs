@@ -99,6 +99,12 @@ export default {
 
 .card {
     border: none;
+    transition: transform .3s;
+    &:hover{
+        opacity: 1;
+        z-index: 999;
+        transform: scale(1.5);
+    }
 
 }
 

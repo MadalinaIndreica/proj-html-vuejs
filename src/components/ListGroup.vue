@@ -156,6 +156,9 @@ export default {
         justify-content: center;
         border-bottom: 1px solid rgb(182, 182, 182);
         padding: 1rem;
+        &:hover{
+            background-color: hsl(0, 0%, 94%);
+        }
 
         img {
             width: 150px;

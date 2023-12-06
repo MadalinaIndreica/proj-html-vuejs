@@ -6,11 +6,17 @@ import ListGroup from "./ListGroup.vue";
 export default {
     data() {
         return {
-            titleTwo: "new arrivals"
+            titleTwo: "new arrivals",
+            value: ""
         }
 
     },
-    components: { AppCardList, BestProducts, ListGroup }
+    components: { AppCardList, BestProducts, ListGroup },
+    methods: {
+        submit() {
+            this.value = '';
+        }
+    }
 }
 
 </script>
@@ -60,7 +66,11 @@ export default {
     <!-- /Collections section -->
 
     <!-- best products section -->
-    <h2 class="text-center pt-5 mt-5">Best seller</h2>
+    <div class="title-section d-flex justify-content-center align-center">
+        <hr style="width:20%;text-align:left;margin-left:5px">
+        <h2 class="text-center pt-5 mt-5">Best seller</h2>
+        <hr style="width:20%;text-align:right;margin-left:0">
+    </div>
     <p class="text-center mb-5">Must have products from our top sellers</p>
     <BestProducts />
     <!-- best products section -->
@@ -84,7 +94,11 @@ export default {
     <!-- /discount section -->
 
     <!-- new arrivals -->
-    <h2 class="text-center pt-5 mt-5">New Arrivals</h2>
+    <div class="title-section d-flex justify-content-center align-center">
+        <hr style="width:20%;text-align:left;margin-left:5px">
+        <h2 class="text-center pt-5 mt-5">New Arrivals</h2>
+        <hr style="width:20%;text-align:right;margin-left:0">
+    </div>
     <p class="text-center mb-5">Brand new products from top designers</p>
     <BestProducts />
     <!-- /new arrivals-->
@@ -106,7 +120,11 @@ export default {
     <div class="container">
         <div class="blog-section">
             <div class="text-part">
-                <h2 class="text-center">From Our Blog</h2>
+                <div class="title-section d-flex justify-content-center align-center">
+                    <hr style="width:20%;text-align:left;margin-left:5px">
+                    <h2 class="text-center pt-5 mt-5">From Our Blog</h2>
+                    <hr style="width:20%;text-align:right;margin-left:0">
+                </div>
                 <p class="text-center">The latest Classic Shop news</p>
             </div>
             <!-- first card -->
@@ -185,12 +203,13 @@ export default {
             </div>
             <div class="input-part d-flex justify-content-between">
                 <label for="exampleFormControlInput1" class="form-label"></label>
-                <input type="email" class="form-control form-control-lg" id="exampleFormControlInput1" placeholder="insert your email">
-                <button type="submit" class="btn btn-primary mb-3">SEND</button>
+                <input type="email" class="form-control form-control-lg" id="exampleFormControlInput1"
+                    placeholder="insert your email" v-model="value" @keyup.enter="submit">
+                <button type="submit" class="btn btn-primary mb-3" @click="submit">SEND</button>
             </div>
         </div>
     </div>
-    
+
     <!-- /input section -->
 </template>
 
@@ -322,23 +341,38 @@ hr {
     background-color: hsl(214.29deg 6.8% 20.2%);
     color: white;
     height: 300px;
-   vertical-align: middle;
-   padding-top: 7rem;
+    vertical-align: middle;
+    padding-top: 7rem;
+
     .fa-envelope {
         width: 50px;
         height: 50px;
-        background-color:hsl(214.29deg 7.53% 18.24%);;
+        background-color: hsl(214.29deg 7.53% 18.24%);
+        ;
         border-radius: 50%;
         text-align: center;
         padding-top: 15px;
     }
+
     .form-control-lg {
         border-radius: 35px;
     }
+
     .btn {
         background-color: hsl(214.83deg 60.85% 53.92%);
         border-radius: 20px;
         margin-top: 1rem;
+    }
+}
+
+.title-section {
+    align-items: center;
+    vertical-align: middle;
+
+    h2 {
+        padding-bottom: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 }
 </style>

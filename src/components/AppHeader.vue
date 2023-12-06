@@ -68,9 +68,13 @@ header {
     }
 
     .header-bottom {
+        i{
+            margin-left: 5px;
+        }
         a {
             text-decoration: none;
             color: hsl(210deg 5.43% 36.08%);
+            
 
             &:hover {
                border-top:5px solid rgb(50, 135, 255);
