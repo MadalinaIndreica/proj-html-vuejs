@@ -50,8 +50,14 @@ header {
         border-bottom: 1px solid hsl(210deg 5.43% 36.08%);
 
         span {
-            // border-right: 1px solid hsl(210deg 5.43% 36.08%);
+          
             padding: 1rem;
+            &:hover{
+                background-color: rgb(50, 135, 255);
+                opacity:1;
+                color: white;
+
+            }
         }
     }
 
@@ -65,6 +71,12 @@ header {
         a {
             text-decoration: none;
             color: hsl(210deg 5.43% 36.08%);
+
+            &:hover {
+               border-top:5px solid rgb(50, 135, 255);
+               padding: 2rem;
+               transition: .5s
+            }
 
         }
 

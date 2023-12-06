@@ -67,10 +67,10 @@ export default {
             ]
         }
     },
-    methods: {
+   methods: {
         getImagePath(image) {
             return new URL(`../assets/image/images/${image}`, import.meta.url).href;
-        }
+         }
     }
 }
 
